@@ -7,19 +7,32 @@
   <title>Hope these smell better than the code firing off all those Sentry errors</title>
   <style>
     :root {
-      --clr-secondary: black;
+      --clr-bg: #fcfefe;
+      --clr-primary: #66bfbf;
+      --clr-secondary: #f76b8a;
+      --clr-note-bg: #eaf6f6;
     }
     
     body {
-      width: 70%;
-      margin: 2rem auto;
+      width: 70vw;
+      margin: max(2vw, 2rem) auto;
+      color: var(--clr-primary);
+      background-color: var(--clr-bg);
+    }
+    
+    #intro {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 3em;
     }
     
     figure {
-      border-top: 1px solid var(--clr-secondary);
-      border-bottom: 1px solid var(--clr-secondary);
-      margin: 1em auto;
-      width: 60ch;
+      box-shadow: 5px 5px 10px #efefef;
+      background-color: var(--clr-note-bg);
+      
+      margin: 1.5em auto;
+      padding: .5em;
+      width: 75%;
     }
     
     figure:nth-of-type(odd) {
@@ -32,11 +45,12 @@
     
     figcaption {
       text-align: right;
+      color: var(--clr-secondary);
     }
   </style>
 </head>
 <body>
-  <p>
+  <p id="intro">
     The team had so many kind words for you that a simple card wasn't big enough, so here is a whole HTML page!
   </p>
   <figure>
